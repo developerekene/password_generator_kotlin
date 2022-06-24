@@ -19,4 +19,5 @@ class Functions {
 
         return generatedNumber
     }
+
 }
