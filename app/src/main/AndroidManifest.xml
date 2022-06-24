@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PasswordGenerator">
         <activity
+            android:name=".IdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChoiceActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity

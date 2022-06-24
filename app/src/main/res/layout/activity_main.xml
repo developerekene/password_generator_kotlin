@@ -5,64 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <TextView
-        android:id="@+id/title_description"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Password Generator"
-        android:layout_above="@id/text_description"
-        android:layout_marginBottom="10dp"
-        android:textSize="30sp"
-        android:textColor="@color/black"
-        android:textAlignment="center">
-
-    </TextView>
-
-    <TextView
-        android:id="@+id/text_description"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/layout_unique_password"
-        android:layout_marginBottom="140dp"
-        android:text="Please Create your Unique Password"
-        android:textAlignment="center">
-
-    </TextView>
 
     <TextView
         android:id="@+id/layout_unique_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:layout_above="@id/clear_field_button"
         android:text="YOUR UNIQUE PASSWORD GOES HERE"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp" />
 
-<!--    <com.google.android.material.textfield.TextInputLayout-->
-<!--        android:id="@+id/layout_unique_password"-->
-<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_centerInParent="true"-->
-<!--        android:padding="10dp">-->
-
-<!--        <com.google.android.material.textfield.TextInputEditText-->
-<!--            android:id="@+id/unique_password"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:hint="Your Unique Password"-->
-<!--            android:inputType="textPersonName" />-->
-<!--    </com.google.android.material.textfield.TextInputLayout>-->
-
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/clear_field_button"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/layout_unique_password"
+        android:layout_above="@id/Generate_password_button"
         android:layout_marginLeft="12dp"
         android:layout_marginTop="65dp"
-        android:background="#0726C1"
+        android:background="@color/purple_700"
         android:text="Clear Field"
         android:textColor="@color/white" />
 
@@ -70,11 +32,11 @@
         android:id="@+id/copy_text_button"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/layout_unique_password"
+        android:layout_above="@id/Generate_password_button"
         android:layout_alignParentRight="true"
         android:layout_marginTop="65dp"
         android:layout_marginRight="12dp"
-        android:background="#880808"
+        android:background="@color/purple_500"
         android:text="Copy Text"
         android:textColor="@color/white" />
 
@@ -82,13 +44,13 @@
         android:id="@+id/Generate_password_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#000"
-        android:layout_below="@id/clear_field_button"
-        android:layout_marginRight="12dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="45dp"
-        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:background="#000"
         android:text="Generate Password"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white" />
 
 </RelativeLayout>
